@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – BoxIt</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff;
+      color: #1c1c1e;
+      line-height: 1.7;
+    }
+    nav {
+      background: #007AFF;
+      padding: 16px 24px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    header {
+      background: #f2f2f7;
+      padding: 40px 24px 32px;
+      border-bottom: 1px solid #e5e5ea;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { color: #8e8e93; margin-top: 6px; font-size: 0.9rem; }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 36px 0 10px;
+      color: #007AFF;
+    }
+    h3 {
+      font-size: 0.97rem;
+      font-weight: 600;
+      margin: 24px 0 6px;
+    }
+    p { margin-bottom: 12px; font-size: 0.97rem; color: #3c3c43; }
+    a { color: #007AFF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+      background: #f0f7ff;
+      border: 1px solid #c5deff;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0 36px;
+    }
+    .contact-box p { margin-bottom: 6px; }
+    .contact-box a { font-weight: 500; }
+    ol { padding-left: 20px; margin-bottom: 12px; }
+    ol li { font-size: 0.97rem; color: #3c3c43; margin-bottom: 6px; }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid #e5e5ea;
+      font-size: 0.85rem;
+      color: #8e8e93;
+    }
+  </style>
+</head>
+<body>
+  <nav><a href="/">← BoxIt</a></nav>
+
+  <header>
+    <h1>Support</h1>
+    <p>BoxIt – Daily Timeboxing</p>
+  </header>
+
+  <main>
+    <h2>Get Help</h2>
+    <div class="contact-box">
+      <p><strong>Email:</strong> <a href="mailto:ryanvreeke@gmail.com">ryanvreeke@gmail.com</a></p>
+      <p><strong>Bug reports &amp; feature requests:</strong><br/>
+        <a href="https://github.com/ryanvreeke/BoxIt/issues">github.com/ryanvreeke/BoxIt/issues</a>
+      </p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is timeboxing?</h3>
+    <p>Timeboxing assigns a fixed block of time to a task and stops when that time is up — regardless of whether the task feels "done." It fights perfectionism, prevents overrun, and forces realistic scheduling. It's one of the most effective time management methods for deep work and ADHD-friendly productivity.</p>
+
+    <h3>How does a Box work?</h3>
+    <ol>
+      <li><strong>Brain Dump</strong> — add every task you want to do today, no order needed.</li>
+      <li><strong>Estimate</strong> — set how long each task actually needs (be honest).</li>
+      <li><strong>Arrange</strong> — put tasks in the order you'll do them. BoxIt shows projected finish times so you can see if the plan is realistic before committing.</li>
+      <li><strong>BoxIt!</strong> — commit the plan. The Box is locked.</li>
+      <li><strong>Start</strong> — tap Start on any block. A timer runs. When it ends, a hard-stop alarm fires.</li>
+      <li><strong>Review</strong> — see how your estimates compared to reality. Improve over time.</li>
+    </ol>
+
+    <h3>Why does the alarm ring even when my phone is on silent?</h3>
+    <p>This is intentional. BoxIt uses AlarmKit — the same system powering iOS native alarms — to ring a hard stop when a time block ends. A timebox that respects silent mode isn't a timebox. You can disable AlarmKit in Settings → Notifications → BoxIt, but this removes the core hard-stop behavior.</p>
+
+    <h3>Can I start tasks in a different order?</h3>
+    <p>Yes. On the Day tab, tap Start on any queued block in any order. Projected finish times update in real time. The order of the Box is a plan, not a lock.</p>
+
+    <h3>Can I edit tasks after committing a Box?</h3>
+    <p>No. Once you tap "BoxIt!", the Box is committed. If you need to change tasks, start a new Box. This is by design — the commitment is the point.</p>
+
+    <h3>Where is my data stored?</h3>
+    <p>Everything is stored locally on your device. Nothing leaves your phone. There is no account, no cloud sync, and no backup. If you delete the app, your data is permanently gone.</p>
+
+    <h3>Does BoxIt work on iPad?</h3>
+    <p>BoxIt is an iPhone app. It will run on iPad in iPhone compatibility mode but is not optimized for iPad layouts.</p>
+
+    <h3>I found a bug — how do I report it?</h3>
+    <p>Open an issue at <a href="https://github.com/ryanvreeke/BoxIt/issues">github.com/ryanvreeke/BoxIt/issues</a> or email <a href="mailto:ryanvreeke@gmail.com">ryanvreeke@gmail.com</a>. Include your iOS version, steps to reproduce, and screenshots if relevant.</p>
+
+    <h2>Privacy</h2>
+    <p>BoxIt collects no data. See the full <a href="/legal/privacy-policy.html">Privacy Policy</a>.</p>
+  </main>
+
+  <footer>
+    <a href="/">BoxIt</a> &nbsp;·&nbsp;
+    <a href="/legal/privacy-policy.html">Privacy Policy</a>
+    <p style="margin-top:8px;">© 2026 Ryan Vreeke</p>
+  </footer>
+</body>
+</html>
